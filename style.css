@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background: #fff8fb;
+    color: #222;
+
+}
+header{
+    background: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(0,0,0,06);
+
+}
+.logo{
+    font-weight: 800;
+    font-size: 22px;
+    color: #ff1a75;
+}
+.btn{
+    background: #ff1a75;
+    color: white;
+    padding: 12px 26px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+.btn-green{
+    background: #00b875;
+}
+.hero{
+    padding: 70px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(110deg,#fff0f6 60%#ffe3ec);
+
+}
+.hero-text{
+    flex: 1;
+    min-width: 300px;
+}
+.hero-text h1{
+    font-size: 46px;
+    line-height: 1.1;
+}
+.hero-text h1 span{
+    color: #ff1a75;
+}
+.hero-text p{
+    color: #666;
+    margin: 18px 0;
+    font-size: 17px;
+}
+.hero-img{
+    flex: 1;
+    min-width: 280px;
+
+}
+.hero-img img{
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(255,26 ,117, .2);
+}
+section{
+    padding: 60px 5%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+
+}
+.card{
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0 ,0,.07);
+    transition: 3s;
+}
+.card:hover{
+    transform: translateY(-6px);
+}
+.card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.card-body{
+    padding: 18px;
+}
+.price{
+    color: #ff1a75;
+    font-weight: 800;
+    font-size: 20px;
+}
+.old{
+    color: #aaa;
+    text-decoration: line-through;
+    font-size: 13px;
+    margin-left: 8px;
+}
+.opay-box{
+    background: white;
+    max-width: 420px;
+    margin: auto;
+    padding: 28px;
+    border: 2px dashed #00b875;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+
+footer{
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+}
+.badge{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ff1a75;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+.img-wrap{
+    position: relative;
+}
+.order{
+  background:white;
+  max-width:520px;
+  margin:30px auto;
+  padding:32px;
+  border-radius:22px;
+  box-shadow:0 12px 35px rgba(255,26,117,0.12);
+  border:1px solid #ffe3ee;
+}
+.order h3{font-size:22px;margin-bottom:20px;color:#111;text-align:center}
+.order label{font-size:13px;font-weight:600;color:#444;margin-top:12px;display:block}
+.order input,.order select,.order textarea{
+  width:100%;
+  padding:14px 16px;
+  border-radius:12px;
+  border:1.5px solid #ffd0df;
+  margin:6px 0 14px 0;
+  background:#fff8fb;
+  outline:none;
+  font-size:14px;
+  transition:.2s;
+}
+.order input:focus,.order select:focus,.order textarea:focus{
+  border-color:#ff1a75;
+  background:white;
+  box-shadow:0 0 0 4px rgba(255,26,117,0.12);
+}
+.order input::placeholder,.order textarea::placeholder{color:#bbb}
+.order button{
+  background:linear-gradient(135deg,#ff1a75,#ff5fa2);
+  color:white;
+  padding:14px;
+  border-radius:12px;
+  border:none;
+  width:100%;
+  font-weight:700;
+  font-size:16px;
+  cursor:pointer;
+  margin-top:10px;
+  transition:.2s;
+}
+.order button:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(255,26,117,0.3)}
+/* ===== PHONE RESPONSIVE - ADDED BY ATABO ===== */
+@media (max-width: 768px){
+  header{
+    padding:12px 4%;
+  }
+  .logo{font-size:18px}
+  header .btn{padding:7px 12px; font-size:12px}
+
+  .hero{
+    flex-direction:column;
+    padding:30px 5%;
+    text-align:center;
+  }
+  .hero-text h1{
+    font-size:32px !important;
+    line-height:1.2;
+  }
+  .hero-text p{font-size:15px}
+  .hero-img img{
+    margin-top:15px;
+    border-radius:18px;
+  }
+
+  section{padding:35px 4%}
+
+  .grid{
+    grid-template-columns:1fr !important;
+    gap:16px;
+  }
+  .card img{
+    height:260px;
+  }
+
+  .opay-box{
+    width:100%;
+    padding:20px 16px;
+  }
+  .opay-box h1{
+    font-size:28px !important;
+  }
+
+  .order{
+    width:95%;
+    padding:22px 18px;
+    margin:20px auto;
+  }
+  .order input,.order select,.order textarea{
+    font-size:16px; /* stops iPhone zoom */
+    padding:13px;
+  }
+}
+
+/* For very small phones like iPhone SE */
+@media (max-width: 400px){
+  .hero-text h1{font-size:26px !important}
+  .btn{width:100%}
+  .card img{height:220px}
+}
